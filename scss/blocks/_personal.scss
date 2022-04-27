@@ -1,0 +1,28 @@
+.personal__wrapper{
+  margin-top: 120px;
+}
+
+.personal__list{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.personal__item{
+  text-align: center;
+  margin-right: 30px;
+  width: 350px;
+}
+
+.personal__title{
+  font-weight: 700;
+font-size: 18px;
+color: #36536B;
+}
+
+.personal__title-lorem {
+  margin: 0;
+  padding: 0;
+  color: #6C8294;
+}

@@ -1,0 +1,172 @@
+.intro {
+  padding-top: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.intro__span {
+  content: "";
+  position: absolute;
+  top: -260px;
+  right: -305px;
+  width: 780px;
+  height: 780px;
+  background-image: url('../img/header-bac-img.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+}
+
+.intro__section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro__wrapper{
+  margin-top: 74px;
+}
+
+.intro__title {
+  font-family: 'DM Serif Display';
+  width: 546px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: -0.553846px;
+  color: #36536B;
+}
+.form {
+  position: relative;
+}
+.intro__email{
+  border-radius: 24px;
+  padding: 15px 200px 15px 27px;
+  background: #FBFCFE;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border: none;
+  margin-bottom: 16px;
+  position: absolute;
+  z-index: -1;
+  
+  &:focus {
+    outline: none;
+  }
+}
+.intro__button {
+  @include button;
+  background-color: #BA4270;
+  color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 25px;
+  margin-left: 300px;
+  
+}
+
+.intro__button:hover{
+  background-color: #DA6D97;
+box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
+
+.intro__button:active{
+  background-color: #BA4270;
+box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
+
+.intro__phone{
+  margin-top: 20px;
+}
+
+.intro__description{
+  margin-left: 30px;
+  color: #6C8294;
+}
+
+.intro__description-span {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 851px) {
+  .intro {
+    text-align: center;
+  }
+  .intro__title {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 20px;
+  }
+  .intro__phone{
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    
+  }
+
+  .intro__section {
+    flex-direction:column-reverse ;
+    
+      
+    }
+
+  .intro__button {
+    right: 165px;
+  }
+
+
+}
+
+@media only screen and (max-width: 656px) {
+  .intro {
+    text-align: center;
+  }
+  .intro__title {
+    margin: 0 auto;
+    font-size: 32px;
+    line-height: 36px;
+    
+  }
+  .intro__title {
+    margin-bottom: 20px;
+  }
+  .intro__phone {
+    max-width: 100%;
+  }
+
+  
+
+
+}
+
+@media only screen and (max-width: 501px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro__email {
+    width: 100%;
+    position: relative;
+  }
+  .intro__button {
+    width: 100%;
+    position: relative;
+    margin-left: 0;
+    right: 1px;
+  }
+  .intro {
+    text-align: center;
+  }
+  .intro__title {
+    margin: 0 auto;
+    font-size: 32px;
+    line-height: 36px;
+    
+  }
+  .intro__title {
+    margin-bottom: 20px;
+  }
+
+}
